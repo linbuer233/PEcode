@@ -27,7 +27,7 @@ function HybirdIntegers(num)
 end
 
 function findHI(num)
-    progress = Progress(num, desc="Processing: $num")
+    progress = Progress(num, desc="Processing: ")
     for i in 1:num
         result = HybirdIntegers(i)
         if result !== nothing
@@ -38,4 +38,4 @@ function findHI(num)
     end
 end
 
-@timev findHI(800^2)
+@timev findHI(8^8)
