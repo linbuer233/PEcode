@@ -20,3 +20,9 @@ echo $ups
 echo $downs
 mkdir -p ./$downs~$ups/q$a
 touch ./$downs~$ups/q$a/q$a.jl
+echo "function C(num)" >> ./$downs~$ups/q$a/q$a.jl
+echo "" >> ./$downs~$ups/q$a/q$a.jl
+echo "end" >> ./$downs~$ups/q$a/q$a.jl
+echo "" >> ./$downs~$ups/q$a/q$a.jl
+echo "" >> ./$downs~$ups/q$a/q$a.jl
+echo "@show @time C()" >> ./$downs~$ups/q$a/q$a.jl
