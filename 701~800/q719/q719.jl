@@ -6,7 +6,7 @@ function C1(num)
     for i in psnum
         sqnum = sqrt(i)
         a = 1
-        for j in 1:12
+        for j = 1:12
             if sqnum % 10^j == sqnum
                 a = j
                 break
@@ -14,14 +14,14 @@ function C1(num)
         end
         # println(sqnum, "\t", a)
         b = 1
-        for j in 1:12
+        for j = 1:12
             if i % 10^j == i
                 b = j - 1
                 break
             end
         end
         a1 = []
-        for ii in b:-1:0
+        for ii = b:-1:0
             # println("ii:\t", ii)
             temp = (i - i % 10^ii) / 10^ii
             push!(a1, temp)
@@ -34,7 +34,7 @@ function C1(num)
             continue
         end
         #
-        for ii in 1:length(a1)
+        for ii = 1:length(a1)
             if (ii + a - 1) > length(a1)
                 break
             end
@@ -69,7 +69,7 @@ function C2(num)
     for i in a
         sqnum = sqrt(i)
         a = 1
-        for j in 1:12
+        for j = 1:12
             if sqnum % 10^j == sqnum
                 a = j
                 break
@@ -77,21 +77,21 @@ function C2(num)
         end
         # println(sqnum, "\t", a)
         b = 1
-        for j in 1:12
+        for j = 1:12
             if i % 10^j == i
                 b = j - 1
                 break
             end
         end
         a1 = []
-        for ii in b:-1:0
+        for ii = b:-1:0
             # println("ii:\t", ii)
             temp = (i - i % 10^ii) / 10^ii
             push!(a1, temp)
             i = (i - temp * 10^ii)
             # println(i)
         end
-        for ii in 1:length(a1)
+        for ii = 1:length(a1)
             if (ii + a - 1) > length(a1)
                 break
             end
@@ -128,7 +128,7 @@ function C2(num)
 end
 function C(num)
     a = []
-    for i in 1:num
+    for i = 1:num
         sqrtnum = sqrt(i)
         if floor(Int, sqrtnum) == sqrtnum
             push!(a, i)
@@ -157,8 +157,8 @@ function is_s_number(n::Int)
     end
 
     # 检查所有可能的分割组合
-    for i in 1:(length(str_n)-1)
-        for j in (i+1):(length(str_n))
+    for i = 1:(length(str_n)-1)
+        for j = (i+1):(length(str_n))
             # 根据分割点分割字符串
             part1 = str_n[1:i-1]
             part2 = str_n[i:j-1]
@@ -212,7 +212,7 @@ end
 function g(n, s)
     println(n, "\t\t\t", s)
     n ≤ s && return n == s
-    for i in 1:ndigits(n)-1
+    for i = 1:ndigits(n)-1
         println("=====", i, "===", n % 10^i, "====", s - n ÷ 10^i)
         println("-----\t", n, "\t\t\t", s)
         g(n % 10^i, s - n ÷ 10^i) && return true
@@ -221,7 +221,7 @@ function g(n, s)
 end
 function T(N)
     a = []
-    for n in 2:isqrt(N)
+    for n = 2:isqrt(N)
         println("################################")
         if g(n^2, n)
             push!(a, n^2)

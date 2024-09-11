@@ -3,7 +3,7 @@ function C()
     result = 1
     while true
         b = []
-        for i in 6:20
+        for i = 6:20
             if a % i == 0
                 push!(b, i)
             end

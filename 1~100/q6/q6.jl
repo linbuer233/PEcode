@@ -1,7 +1,7 @@
 function C()
     a = 0
     b = 0
-    for i in 1:100
+    for i = 1:100
         a = a + i^2
         b = b + i
     end

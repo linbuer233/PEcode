@@ -16,7 +16,7 @@ function value2num(value, cardnum, cardvalues)
     end
     value_new = sort(value_new)
     De = []
-    for i in 1:length(value_new)-1
+    for i = 1:length(value_new)-1
         push!(De, (value_new[i+1] - value_new[i]))
     end
     return value_new, De
@@ -131,7 +131,7 @@ end
 
 function PD(p1, p2)
     cardnum = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
-    cardvalue = [i for i in 1:13]
+    cardvalue = [i for i = 1:13]
     level1, va1, key1, vc1, kc1 = cardclass(p1, cardnum, cardvalue)
     level2, va2, key2, vc2, kc2 = cardclass(p2, cardnum, cardvalue)
     if level1 > level2
@@ -140,7 +140,7 @@ function PD(p1, p2)
         return 0
     end
     if level1 == 0 || level1 == 4 || level1 == 8 || level1 == 5
-        for i in length(va1):-1:1
+        for i = length(va1):-1:1
             if va1[i] > va2[i]
                 return 1
             end
@@ -185,10 +185,10 @@ end
     a1 = readlines(f)
     for ai in a1
         a = split(ai)
-        p1 = [Poker(a[i][1], a[i][2]) for i in 1:5]
-        p2 = [Poker(a[i][1], a[i][2]) for i in 6:10]
+        p1 = [Poker(a[i][1], a[i][2]) for i = 1:5]
+        p2 = [Poker(a[i][1], a[i][2]) for i = 6:10]
         cardnum = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
-        cardvalue = [i for i in 1:13]
+        cardvalue = [i for i = 1:13]
         level1, va1, key1, vc1, kc1 = cardclass(p1, cardnum, cardvalue)
         level2, va2, key2, vc2, kc2 = cardclass(p2, cardnum, cardvalue)
         println(level1, va1, key1, vc1, kc1)
