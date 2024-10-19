@@ -1,7 +1,7 @@
 function C(num)
     maxcount = 0
     maxnum = 1
-    for i in 1:num
+    for i = 1:num
         count = 0
         function compute(x, count)
             # print(x, " ")

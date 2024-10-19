@@ -8,7 +8,7 @@ function C(year, weekidx)
         month[2] = 29
     end
     for (ii, i) in enumerate(month)
-        for j in 1:i
+        for j = 1:i
             # println(year, "\t", ii, "\t", j, "\t:", week[weekidx])
             if j == 1 && week[weekidx] == "Sun"
                 # println(year, "\t", ii, "\t", j, "\t:", week[weekidx])
@@ -26,7 +26,7 @@ end
 @time begin
     a = []
     local weekidx = 2
-    for i in 1901:2000
+    for i = 1901:2000
         b, weekidx = C(i, weekidx)
         # weekidx += 1
         if weekidx == 8
