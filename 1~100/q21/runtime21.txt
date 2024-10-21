@@ -1,0 +1,2 @@
+  0.150181 seconds (201.12 k allocations: 6.904 MiB, 6.02% compilation time)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q21/q21.jl:30 =# @time(C(10000)) = (Any[220, 284, 1184, 1210, 2620, 2924, 5020, 5564, 6232, 6368], 31626)

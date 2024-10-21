@@ -1,0 +1,4 @@
+  0.001291 seconds (17 allocations: 992 bytes, 99.13% compilation time)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q1/q1.jl:11 =# @time(sum3or5(10)) = 23
+  0.000053 seconds (678 allocations: 18.047 KiB)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q1/q1.jl:12 =# @time(sum3or5(1000)) = 233168

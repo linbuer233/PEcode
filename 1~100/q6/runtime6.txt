@@ -1,0 +1,2 @@
+  0.000000 seconds
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q6/q6.jl:11 =# @time(C()) = 25164150

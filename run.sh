@@ -13,7 +13,7 @@ if ! [[ "$a" =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
-downs=$(((a / 100) * 100 + 1))
+downs=$(((a-1 / 100) * 100 + 1))
 b=$99
 ups=$((downs+99))
-/Users/linziyang/.local/bin/julia ./$downs~$ups/q$a/q$a.jl
+/Users/linziyang/.local/bin/julia ./$downs~$ups/q$a/q$a.jl > ./$downs~$ups/q$a/runtime$a.txt

@@ -14,6 +14,11 @@ if ! [[ "$a" =~ ^[0-9]+$ ]]; then
 fi
 
 downs=$(((a / 100) * 100 + 1))
+num1=`expr $a % 100`
+num2=0
+if [ $num1 == $num2 ];then
+    downs=$((a-99))
+fi
 b=$99
 ups=$((downs+99))
 echo $ups

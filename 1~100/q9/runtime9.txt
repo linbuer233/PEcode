@@ -1,0 +1,2 @@
+  0.010149 seconds
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q9/q9.jl:15 =# @time(C(1000)) = (200, 375, 425)

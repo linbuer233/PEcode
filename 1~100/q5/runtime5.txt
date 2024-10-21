@@ -1,0 +1,3 @@
+1
+ 16.412088 seconds (373.43 M allocations: 21.062 GiB, 0.41% gc time, 0.11% compilation time)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q5/q5.jl:21 =# @time(C()) = 232792560

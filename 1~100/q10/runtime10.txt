@@ -1,0 +1,2 @@
+  0.004500 seconds (5 allocations: 1.649 MiB)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q10/q10.jl:7 =# @time(C(2 * 10 ^ 6)) = 142913828922

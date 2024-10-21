@@ -1,0 +1,2 @@
+  0.000099 seconds (1.41 k allocations: 30.133 KiB)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q20/q20.jl:17 =# @time(C(100)) = 648

@@ -1,0 +1,2 @@
+  0.063475 seconds (39.26 k allocations: 2.621 MiB, 99.97% compilation time)
+#= /Users/linziyang/Desktop/work/project/PEcode/1~100/q11/q11.jl:98 =# @time(C(4, arr)) = (70600674, (89, 94, 97, 87))
